@@ -50,28 +50,28 @@
 		</block>
 		<block id="9" name="q9">
 			<tag>Machine9</tag>
-			<x>1131.0</x>
-			<y>208.0</y>
+			<x>1345.0</x>
+			<y>203.0</y>
 		</block>
 		<block id="10" name="q10">
 			<tag>Machine10</tag>
-			<x>1006.0</x>
-			<y>222.0</y>
+			<x>1472.0</x>
+			<y>83.0</y>
 		</block>
 		<block id="11" name="q11">
 			<tag>Machine11</tag>
-			<x>910.0</x>
-			<y>276.0</y>
+			<x>1321.0</x>
+			<y>93.0</y>
 		</block>
 		<block id="12" name="q12">
 			<tag>Machine12</tag>
-			<x>1392.0</x>
-			<y>239.0</y>
+			<x>1218.0</x>
+			<y>91.0</y>
 		</block>
 		<block id="13" name="q13">
 			<tag>Machine13</tag>
-			<x>805.0</x>
-			<y>180.0</y>
+			<x>1190.0</x>
+			<y>209.0</y>
 		</block>
 		<block id="14" name="q14">
 			<tag>Machine14</tag>
@@ -80,13 +80,13 @@
 		</block>
 		<block id="15" name="q15">
 			<tag>Machine15</tag>
-			<x>672.0</x>
-			<y>172.0</y>
+			<x>1060.0</x>
+			<y>186.0</y>
 		</block>
 		<block id="16" name="q16">
 			<tag>Machine16</tag>
-			<x>548.0</x>
-			<y>174.0</y>
+			<x>880.0</x>
+			<y>195.0</y>
 		</block>
 		<block id="17" name="q17">
 			<tag>Machine17</tag>
@@ -135,8 +135,8 @@
 		</block>
 		<block id="26" name="q26">
 			<tag>Machine26</tag>
-			<x>418.0</x>
-			<y>563.0</y>
+			<x>422.0</x>
+			<y>509.0</y>
 		</block>
 		<block id="27" name="q27">
 			<tag>Machine27</tag>
@@ -235,23 +235,23 @@
 		</block>
 		<block id="46" name="q46">
 			<tag>Machine46</tag>
-			<x>559.0</x>
-			<y>567.0</y>
+			<x>550.0</x>
+			<y>515.0</y>
 		</block>
 		<block id="47" name="q47">
 			<tag>Machine47</tag>
-			<x>268.0</x>
-			<y>565.0</y>
+			<x>286.0</x>
+			<y>518.0</y>
 		</block>
 		<block id="48" name="q48">
 			<tag>Machine48</tag>
-			<x>151.0</x>
-			<y>542.0</y>
+			<x>128.0</x>
+			<y>583.0</y>
 		</block>
 		<block id="49" name="q49">
 			<tag>Machine49</tag>
 			<x>105.0</x>
-			<y>678.0</y>
+			<y>644.0</y>
 		</block>
 		<block id="50" name="q50">
 			<tag>Machine50</tag>
@@ -363,41 +363,6 @@
 			<x>405.0</x>
 			<y>799.0</y>
 		</block>
-		<block id="72" name="q72">
-			<tag>Machine72</tag>
-			<x>301.0</x>
-			<y>795.0</y>
-		</block>
-		<block id="73" name="q73">
-			<tag>Machine73</tag>
-			<x>232.0</x>
-			<y>791.0</y>
-		</block>
-		<block id="74" name="q74">
-			<tag>Machine74</tag>
-			<x>173.0</x>
-			<y>789.0</y>
-		</block>
-		<block id="75" name="q75">
-			<tag>Machine75</tag>
-			<x>102.0</x>
-			<y>784.0</y>
-		</block>
-		<block id="76" name="q76">
-			<tag>Machine76</tag>
-			<x>53.0</x>
-			<y>781.0</y>
-		</block>
-		<block id="77" name="q77">
-			<tag>Machine77</tag>
-			<x>7.0</x>
-			<y>781.0</y>
-		</block>
-		<block id="78" name="q78">
-			<tag>Machine78</tag>
-			<x>-38.0</x>
-			<y>779.0</y>
-		</block>
 		<block id="79" name="q79">
 			<tag>Machine79</tag>
 			<x>-69.0</x>
@@ -431,6 +396,13 @@
 			<read>$</read>
 			<write>$</write>
 			<move>L</move>
+		</transition>
+		<transition>
+			<from>49</from>
+			<to>50</to>
+			<read/>
+			<write>p</write>
+			<move>R</move>
 		</transition>
 		<transition>
 			<from>11</from>
@@ -517,6 +489,13 @@
 			<move>L</move>
 		</transition>
 		<transition>
+			<from>53</from>
+			<to>54</to>
+			<read>q</read>
+			<write>Q</write>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>7</from>
 			<to>9</to>
 			<read>1</read>
@@ -594,6 +573,13 @@
 			<move>L</move>
 		</transition>
 		<transition>
+			<from>49</from>
+			<to>49</to>
+			<read>!□</read>
+			<write>~</write>
+			<move>L</move>
+		</transition>
+		<transition>
 			<from>9</from>
 			<to>9</to>
 			<read>!□</read>
@@ -648,6 +634,13 @@
 			<read>P</read>
 			<write>P</write>
 			<move>L</move>
+		</transition>
+		<transition>
+			<from>52</from>
+			<to>53</to>
+			<read>2</read>
+			<write>2</write>
+			<move>R</move>
 		</transition>
 		<transition>
 			<from>23</from>
@@ -776,6 +769,13 @@
 			<move>R</move>
 		</transition>
 		<transition>
+			<from>48</from>
+			<to>45</to>
+			<read>$</read>
+			<write>$</write>
+			<move>L</move>
+		</transition>
+		<transition>
 			<from>37</from>
 			<to>38</to>
 			<read>$</read>
@@ -839,9 +839,16 @@
 			<move>L</move>
 		</transition>
 		<transition>
+			<from>52</from>
+			<to>52</to>
+			<read>!2</read>
+			<write>~</write>
+			<move>L</move>
+		</transition>
+		<transition>
 			<from>46</from>
 			<to>46</to>
-			<read>!2</read>
+			<read>2</read>
 			<write>~</write>
 			<move>L</move>
 		</transition>
@@ -902,6 +909,13 @@
 			<move>R</move>
 		</transition>
 		<transition>
+			<from>50</from>
+			<to>50</to>
+			<read>!$</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>14</from>
 			<to>14</to>
 			<read>!$</read>
@@ -937,6 +951,13 @@
 			<move>R</move>
 		</transition>
 		<transition>
+			<from>51</from>
+			<to>51</to>
+			<read>!$</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>44</from>
 			<to>44</to>
 			<read>!$</read>
@@ -949,6 +970,13 @@
 			<read>!$</read>
 			<write>~</write>
 			<move>R</move>
+		</transition>
+		<transition>
+			<from>46</from>
+			<to>49</to>
+			<read>p</read>
+			<write>P</write>
+			<move>L</move>
 		</transition>
 		<transition>
 			<from>4</from>
@@ -1005,6 +1033,20 @@
 			<read>a</read>
 			<write>~</write>
 			<move>L</move>
+		</transition>
+		<transition>
+			<from>51</from>
+			<to>52</to>
+			<read>$</read>
+			<write>$</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>50</from>
+			<to>51</to>
+			<read>$</read>
+			<write>$</write>
+			<move>R</move>
 		</transition>
 		<transition>
 			<from>17</from>
@@ -1109,26 +1151,19 @@
 		<Machine45/>
 		<Machine49/>
 		<Machine8/>
-		<Machine73/>
 		<Machine7/>
-		<Machine72/>
 		<Machine71/>
 		<Machine70/>
 		<Machine9/>
-		<Machine77/>
 		<Machine33/>
-		<Machine76/>
 		<Machine32/>
 		<Machine31/>
-		<Machine75/>
 		<Machine30/>
-		<Machine74/>
 		<Machine37/>
 		<Machine36/>
 		<Machine79/>
 		<Machine35/>
 		<Machine34/>
-		<Machine78/>
 		<Machine39/>
 		<Machine38/>
 		<Machine0/>
